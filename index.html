@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Khaled - CV</title>
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        p, a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #2980b9;
+            color: white;
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            background: #1a5276;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hamza Khaled</h1>
+            <p>General Programmer | HTML, CSS, JavaScript</p>
+        </header>
+
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Phone:</strong> 
+                <a href="tel:01159409089">01159409089</a>
+            </p>
+            <p><strong>Email:</strong> 
+                <a href="mailto:hk0949544@gmail.com">hk0949544@gmail.com</a>
+            </p>
+            <p><strong>GitHub:</strong> 
+                <a href="https://github.com/zoz211" target="_blank">zoz211</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic</li>
+                <li>English</li>
+                <li>Spanish</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("CV Page Loaded Successfully!");
+        });
+    </script>
+
+</body>
+</html>
